@@ -1,0 +1,6 @@
+KeysoundGui: Keyboard sound software for macOS, Windows and Linux
+MCDLHub: Minecraft launchers download hub
+MyFlower (with [kolafish](github.com/kolafish)): WeChat Mini Program for managing plants
+MyMNIST: Simple MNIST CNN Model that identifies handwritten numbers
+PyPacMan: Simple Pac-Man game
+Fireworks: Simple firework simulation app

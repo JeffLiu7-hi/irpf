@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iris Sun — Personal Site</title>
+    <meta name="description" content="Product-minded engineer crafting simple, thoughtful digital systems." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-gradient" aria-hidden="true"></div>
+    <div class="background-glow" aria-hidden="true"></div>
+    <div class="texture" aria-hidden="true"></div>
+    <button class="admin-switch" type="button" aria-hidden="true" tabindex="-1" data-admin-switch></button>
+
+    <header class="site-header">
+      <div class="logo" aria-label="Iris Sun" data-edit-key="logo">IS</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about" data-edit-key="nav-about">About</a>
+        <a href="#contact" data-edit-key="nav-contact">Contact</a>
+      </nav>
+      <a class="resume" href="#contact" data-edit-key="resume-link">Connect</a>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <div class="eyebrow" data-edit-key="hero-eyebrow">Add Something Here</div>
+          <h1>
+            <span class="headline-primary" data-edit-key="hero-headline-primary">Add Text Here For Headline.</span>
+            <span class="headline-secondary" data-edit-key="hero-headline-secondary">Iris Sun's personal website.</span>
+          </h1>
+          <p data-edit-key="hero-body">Add Something Here</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="mailto:2108000003@wya.top" data-edit-key="hero-primary-cta">Say hello</a>
+            <a class="btn ghost" href="#about" data-edit-key="hero-secondary-cta">Read about me</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="mickeyprofile.png" alt="Portrait of Jeff Liu" loading="lazy" />
+        </figure>
+      </section>
+
+      <section class="panel" id="about">
+        <div class="panel-heading" data-edit-key="about-heading">About</div>
+        <div class="panel-content about-intro">
+          <div class="about-copy">
+            <h2 data-edit-key="about-title">Add Title Here</h2>
+            <p data-edit-key="about-body">
+            Add Description Here
+	    </p>
+          </div>
+          <ul class="pill-list" aria-label="Focus areas">
+            <li data-edit-key="about-pill-1">Add Something..</li>
+            <li data-edit-key="about-pill-2">Add Something..</li>
+            <li data-edit-key="about-pill-3">Add Something..</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel" id="contact">
+        <div class="panel-heading" data-edit-key="contact-heading">Contact</div>
+        <div class="panel-content contact">
+          <div>
+            <h2 data-edit-key="contact-title">Add Contact Title Here</h2>
+            <p data-edit-key="contact-body">
+            Add something here
+	    </p>
+          </div>
+          <div class="contact-actions">
+            <button class="btn primary" data-copy="liujeff452@gmail.com" data-edit-key="contact-button">Copy email</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Jeff Liu</span>
+      <span data-edit-key="footer-tagline">Calm sites for intentional teams.</span>
+    </footer>
+
+    <div class="admin-modal" hidden data-admin-modal>
+      <form class="admin-card" data-admin-form>
+        <div class="admin-label">Admin</div>
+        <h2>Unlock edit mode</h2>
+        <p>Enter the password to edit text directly on the page.</p>
+        <label class="admin-field">
+          <span>Password</span>
+          <input type="password" autocomplete="current-password" data-admin-password />
+        </label>
+        <p class="admin-error" data-admin-error></p>
+        <div class="admin-actions">
+          <button class="btn ghost" type="button" data-admin-cancel>Cancel</button>
+          <button class="btn primary" type="submit">Unlock</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="admin-toolbar" hidden data-admin-toolbar>
+      <span class="admin-toolbar-label">Edit mode</span>
+      <span class="admin-status" data-admin-status></span>
+      <button class="btn ghost" type="button" data-admin-save>Save</button>
+      <button class="btn primary" type="button" data-admin-lock>Lock</button>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
